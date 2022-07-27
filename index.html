@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Performance Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-md-8 col-sm-12 mt-2">
+                <div class="p-5 bg-light rounded-3">
+                    <div class="container-fluid py-5">
+                      <h1 class="display-5 fw-bold">Skill Tes BT Trusmi</h1>
+                      <p class="col-md-8 fs-4">Data yang digunakan bukan merupakan data asli</p>
+                    </div>
+                  </div>
+                <div class="card mt-2">
+                    <div class=' card-header with-border '>
+                        <h5 class='card-title'><i class="fas fa-user fa-fw   "></i>Tabel KPI Marketing</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="kpiTable" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">Nama</th>
+                                        <th colspan="4" style="text-align: center">Sales</th>
+                                        <th colspan="4" style="text-align: center">Report</th>
+                                        <th rowspan="2">KPI</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Target</th>
+                                        <th>Actual</th>
+                                        <th>Pencapaian</th>
+                                        <th>Actual Bobot</th>
+                                        <th>Target</th>
+                                        <th>Actual</th>
+                                        <th>Pencapaian</th>
+                                        <th>Actual Bobot</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="bodyKPITable"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-5">
+                <div class="card mt-2">
+                    <div class="card-header">
+                        <h5 class='card-title'><i class="fas fa-user fa-fw   "></i>Ontime Percentage All Employes</h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas class="pieChart" width="100%" height="100"></canvas>
+                    </div>
+                </div>
+                <div class="card mt-2">
+                    <div class="card-header">
+                        <h5 class='card-title'><i class="fas fa-user fa-fw   "></i>Detail Percentage Ontime</h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas class="stackedChart" width="100%" height="50"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.min.js" integrity="sha512-zjlf0U0eJmSo1Le4/zcZI51ks5SjuQXkU0yOdsOBubjSmio9iCUp8XPLkEAADZNBdR9crRy3cniZ65LF2w8sRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="table.js"></script>
+
+</body>
+</html>
